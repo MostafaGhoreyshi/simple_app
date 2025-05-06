@@ -24,6 +24,8 @@ push:
 
 deploy:
   stage: deploy
+  environment:
+    name : runner-1
   script:
     - docker-compose pull
     - docker-compose down
