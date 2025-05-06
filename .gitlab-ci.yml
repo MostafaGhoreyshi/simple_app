@@ -24,6 +24,7 @@ push:
 
 deploy:
   stage: deploy
+  when : manual
   environment:
     name : runner-1
   script:
